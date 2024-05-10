@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px=1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.container {
+  width: 35rem;
+  background-color: #eef5ff;
+  margin: 3rem auto;
+  border-radius: 15px;
+  padding: 1.5rem;
+}
+
+/****** Date and Time ********/
+
+.date-hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/****** Input ********/
+
+.form__text {
+  font-size: 1.3rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  margin-top: 0.5rem;
+  width: 32rem;
+}
+
+/****** Radio Buttons ********/
+
+.form__radio {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.radio__buttons {
+  border: 1px solid transparent;
+  display: flex;
+  width: 15rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: #b4d4ff;
+  align-items: center;
+}
+
+input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: #86b6f6;
+  border: 2px solid #fff;
+  outline: solid 1px #176b87;
+}
+
+input[type="radio"]:hover {
+  background-color: #176b87;
+}
+
+input[type="radio"]:checked {
+  background-color: #176b87;
+}
+
+.radio__title {
+  padding-left: 10px;
+}
+
+/****** Submit button ********/
+
+.button__submit {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 0.8rem;
+  border-radius: 5px;
+  margin-top: 1.5rem;
+  width: 32rem;
+  background-color: #86b6f6;
+  color: #fff;
+  border: none;
+}
+
+.button__submit:hover {
+  background-color: #176b87;
+}
