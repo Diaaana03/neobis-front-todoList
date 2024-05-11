@@ -12,11 +12,11 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body onload="time()">
     <div class="container">
       <div class="date-hour">
-        <p class="date">date</p>
-        <p class="hour">hour</p>
+        <p class="date" id="date">date</p>
+        <p class="hour" id="hour">hour</p>
       </div>
       <header>
         <h1>What's up, Diana</h1>
@@ -48,7 +48,7 @@
                 id="business"
                 name="business"
                 value="business"
-              /><label for="Business" class="radio__title">Business</label>
+              /><label for="business" class="radio__title">Business</label>
             </div>
           </div>
           <button type="submit" class="button__submit">Add todo</button>

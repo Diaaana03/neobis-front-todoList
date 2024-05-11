@@ -31,6 +31,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 
 /****** Input ********/
@@ -62,6 +63,7 @@ p {
   border-radius: 10px;
   background-color: #b4d4ff;
   align-items: center;
+  cursor: pointer;
 }
 
 input[type="radio"] {
@@ -69,17 +71,32 @@ input[type="radio"] {
   border-radius: 50%;
   width: 1.2rem;
   height: 1.2rem;
-  background-color: #86b6f6;
+  background-color: #fff;
   border: 2px solid #fff;
-  outline: solid 1px #176b87;
 }
 
-input[type="radio"]:hover {
-  background-color: #176b87;
+input[name="personal"] {
+  outline: solid 1px #fc819e;
 }
 
-input[type="radio"]:checked {
-  background-color: #176b87;
+input[name="personal"]:hover {
+  background-color: #fc819e;
+}
+
+input[name="personal"]:checked {
+  background-color: #fc819e;
+}
+
+input[name="business"] {
+  outline: solid 1px #8b93ff;
+}
+
+input[name="business"]:hover {
+  background-color: #8b93ff;
+}
+
+input[name="business"]:checked {
+  background-color: #8b93ff;
 }
 
 .radio__title {
@@ -98,6 +115,7 @@ input[type="radio"]:checked {
   background-color: #86b6f6;
   color: #fff;
   border: none;
+  cursor: pointer;
 }
 
 .button__submit:hover {
