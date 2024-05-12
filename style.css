@@ -34,6 +34,21 @@ p {
   margin-bottom: 0.5rem;
 }
 
+/****** Name ********/
+
+.header__name {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.name__text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  background-color: #eef5ff;
+  color: #000;
+}
+
 /****** Input ********/
 
 .form__text {
@@ -47,7 +62,7 @@ p {
   width: 32rem;
 }
 
-/****** Radio Buttons ********/
+/****** Category Buttons ********/
 
 .form__radio {
   margin-top: 0.5rem;
@@ -66,7 +81,8 @@ p {
   cursor: pointer;
 }
 
-input[type="radio"] {
+input[type="radio"],
+[type="checkbox"] {
   appearance: none;
   border-radius: 50%;
   width: 1.2rem;
@@ -121,3 +137,76 @@ input[name="business"]:checked {
 .button__submit:hover {
   background-color: #176b87;
 }
+
+/****** Tasks ********/
+
+.tasks__header {
+  margin-top: 1rem;
+}
+
+.todo__task {
+  display: flex;
+  margin-top: 1rem;
+  background-color: #86b6f6;
+  border-radius: 5px;
+  padding: 1rem;
+  align-items: center;
+}
+
+.todo__task label {
+  display: flex;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.todo__content input {
+  font-size: 1.2rem;
+  border: none;
+  background-color: #86b6f6;
+  margin-right: 8rem;
+}
+
+.edit,
+.delete {
+  font-size: 0.9rem;
+  padding: 3px;
+  color: #fff;
+  border-radius: 5px;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #009e60;
+  margin-right: 0.5rem;
+}
+
+.delete {
+  background-color: #de3163;
+}
+
+/* .todo__tasks,
+.tasks {
+  margin: 1rem 0;
+}
+
+.todo__tasks,
+.todo__task {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  background-color: #b4d4ff;
+}
+
+.todo__task label {
+  display: block;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.todo__task,
+.todo__content {
+  flex: 1 1 0%;
+} */

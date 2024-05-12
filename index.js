@@ -1,3 +1,5 @@
+///time
+
 const data = new Date();
 
 const timeElapsed = Date.now();
@@ -19,3 +21,5 @@ function time() {
   document.getElementById("hour").innerHTML = h + ":" + m + ":" + s;
   setTimeout("time()", 500);
 }
+
+///time

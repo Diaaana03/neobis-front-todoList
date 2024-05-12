@@ -19,10 +19,18 @@
         <p class="hour" id="hour">hour</p>
       </div>
       <header>
-        <h1>What's up, Diana</h1>
+        <h1 class="header__name">
+          What's up,
+          <input
+            type="text"
+            placeholder="Name here"
+            id="name"
+            class="name__text"
+          />
+        </h1>
         <h5>CREATE A TODO</h5>
       </header>
-      <form action="" id="todo-form">
+      <form id="todo-form">
         <p>What's on your todo list?</p>
         <div class="form__control">
           <input
@@ -54,6 +62,33 @@
           <button type="submit" class="button__submit">Add todo</button>
         </div>
       </form>
+      <h5 class="tasks__header">TODO List</h5>
+      <div class="todo__tasks">
+        <div class="tasks" id="todo-tasks">
+          <div class="todo__task">
+            <label><input type="checkbox" name="personal" /></label>
+            <span class="personal"></span>
+            <div class="todo__content">
+              <input type="text" value="buy something" />
+            </div>
+            <div class="todo__buttons">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+          <div class="todo__task">
+            <label><input type="checkbox" name="business" /></label>
+            <span class="business"></span>
+            <div class="todo__content">
+              <input type="text" value="buy milk" />
+            </div>
+            <div class="todo__buttons">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
