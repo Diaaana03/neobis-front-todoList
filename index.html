@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To Do list</title>
+    <title>ToDo List</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,83 +13,57 @@
     />
   </head>
   <body onload="time()">
-    <div class="container">
+    <main>
       <div class="date-hour">
         <p class="date" id="date">date</p>
         <p class="hour" id="hour">hour</p>
       </div>
-      <header>
-        <h1 class="header__name">
-          What's up,
-          <input
-            type="text"
-            placeholder="Name here"
-            id="name"
-            class="name__text"
-          />
-        </h1>
-        <h5>CREATE A TODO</h5>
-      </header>
-      <form id="todo-form">
-        <p>What's on your todo list?</p>
-        <div class="form__control">
-          <input
-            type="text"
-            class="form__text"
-            placeholder="e.g. get a milk"
-            id="todo-input"
-          />
-          <p>Pick a category:</p>
-          <div class="form__radio">
-            <div class="radio__buttons">
-              <input
-                type="radio"
-                id="personal"
-                name="personal"
-                value="personal"
-              />
-              <label for="personal" class="radio__title">Personal</label>
-            </div>
-            <div class="radio__buttons">
-              <input
-                type="radio"
-                id="business"
-                name="business"
-                value="business"
-              /><label for="business" class="radio__title">Business</label>
-            </div>
+      <h1 class="header__text">What's up,</h1>
+      <input
+        class="title"
+        type="text"
+        placeholder="Name here"
+        value=""
+        name="title"
+        id="title"
+      />
+      <h2>CREATE A TODO</h2>
+      <form class="todo-form">
+        <label for="task">What's on your todo list?</label>
+        <input
+          type="text"
+          name="task"
+          id="task"
+          placeholder="e.g. get a milk"
+        />
+        <label class="category__label">Pick a category</label>
+        <div class="category">
+          <div class="categories">
+            <input
+              class="category__radio"
+              type="radio"
+              id="business"
+              name="category"
+              value="business"
+            />
+            <label for="business">Business</label>
           </div>
-          <button type="submit" class="button__submit">Add todo</button>
+          <div class="categories">
+            <input
+              class="category__radio personal-radio"
+              type="radio"
+              id="personal"
+              name="category"
+              value="personal"
+            />
+            <label for="personal">Personal</label>
+          </div>
         </div>
+        <input type="submit" id="submit__btn" value="Add Todo" />
       </form>
-      <h5 class="tasks__header">TODO List</h5>
-      <div class="todo__tasks">
-        <div class="tasks" id="todo-tasks">
-          <div class="todo__task">
-            <label><input type="checkbox" name="personal" /></label>
-            <span class="personal"></span>
-            <div class="todo__content">
-              <input type="text" value="buy something" />
-            </div>
-            <div class="todo__buttons">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-          <div class="todo__task">
-            <label><input type="checkbox" name="business" /></label>
-            <span class="business"></span>
-            <div class="todo__content">
-              <input type="text" value="buy milk" />
-            </div>
-            <div class="todo__buttons">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <script src="index.js"></script>
+      <h2>TODO List</h2>
+      <div class="tasks"></div>
+    </main>
+    <script src="./index.js"></script>
   </body>
 </html>
