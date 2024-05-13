@@ -1,6 +1,6 @@
-# LaslesVPN
+# ToDo List
 
-LaslesVPN is a website which provides network for all users around the world. You can find all information about LaslesVPN on this website. Pricing, Features, Plans and etc. is easy to read.
+ToDo List is a website with small App where you can plan your activities during the day. You can write a new task and choose between two categories. This website was built in training purposes.
 
 ## System Requirements
 
